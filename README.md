@@ -99,26 +99,4 @@
  
 ---
  
-## 7. Discussion questions for the team
- 
-- Which **exceptions** (2A vs 2B) do we expect in the next quarter?
-- Who **owns** creating Stripe Customers and setting **metadata** (`accountId`) for 2B?
-- Do we need an **internal admin UI** for 2A instead of direct DB edits?
-- For **2B**, do we implement the **`invoice.paid` entitlement branch** in this sprint or after the first real invoice customer?
- 
----
- 
-## 8. Related code (engineering)
- 
-| Area | Location |
-|------|----------|
-| Subscription schema | `models/subscription.js` |
-| Plan definitions & Stripe price IDs | `lib/billing/plans.js` |
-| Checkout session | `pages/api/billing/create-checkout-session.js` |
-| Webhooks | `pages/api/billing/webhook.js` |
-| Billing overview API | `pages/api/billing/overview.js` |
-| App base URL for Stripe redirects | `lib/billing/getAppBaseUrl.js` |
- 
----
- 
 *Document version: internal draft for team discussion. Update when product policy or implementation changes.*
